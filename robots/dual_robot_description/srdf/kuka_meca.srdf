@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="kuka_meca">
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="base_link" link2="link_1" reason="User"/>
+    <disable_collisions link1="base_link" link2="link_2" reason="User"/>
+    <disable_collisions link1="base_link" link2="link_3" reason="User"/>
+    <disable_collisions link1="base_link" link2="link_4" reason="User"/>
+    <disable_collisions link1="base_link" link2="link_5" reason="User"/>
+    <disable_collisions link1="base_link" link2="link_6" reason="User"/>
+    <disable_collisions link1="base_link" link2="meca_axis_1_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="meca_axis_2_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="meca_axis_3_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="meca_axis_4_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="meca_axis_5_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="meca_axis_6_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="telebot_cell_base_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="tool0" reason="User"/>
+    <disable_collisions link1="base_link" link2="tool_meca" reason="User"/>
+    <disable_collisions link1="link_1" link2="link_2" reason="User"/>
+    <disable_collisions link1="link_1" link2="link_3" reason="User"/>
+    <disable_collisions link1="link_1" link2="meca_axis_1_link" reason="User"/>
+    <disable_collisions link1="link_1" link2="meca_axis_2_link" reason="User"/>
+    <disable_collisions link1="link_1" link2="meca_axis_3_link" reason="User"/>
+    <disable_collisions link1="link_1" link2="meca_axis_4_link" reason="User"/>
+    <disable_collisions link1="link_1" link2="meca_axis_5_link" reason="User"/>
+    <disable_collisions link1="link_1" link2="meca_axis_6_link" reason="User"/>
+    <disable_collisions link1="link_1" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="link_1" link2="telebot_cell_base_link" reason="User"/>
+    <disable_collisions link1="link_1" link2="tool_meca" reason="User"/>
+    <disable_collisions link1="link_2" link2="link_3" reason="User"/>
+    <disable_collisions link1="link_2" link2="meca_axis_1_link" reason="User"/>
+    <disable_collisions link1="link_2" link2="meca_axis_2_link" reason="User"/>
+    <disable_collisions link1="link_2" link2="meca_axis_3_link" reason="User"/>
+    <disable_collisions link1="link_2" link2="meca_axis_4_link" reason="User"/>
+    <disable_collisions link1="link_2" link2="meca_axis_5_link" reason="User"/>
+    <disable_collisions link1="link_2" link2="meca_axis_6_link" reason="User"/>
+    <disable_collisions link1="link_2" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="link_2" link2="tool_meca" reason="User"/>
+    <disable_collisions link1="link_3" link2="link_4" reason="User"/>
+    <disable_collisions link1="link_3" link2="link_5" reason="User"/>
+    <disable_collisions link1="link_3" link2="link_6" reason="User"/>
+    <disable_collisions link1="link_3" link2="meca_axis_1_link" reason="User"/>
+    <disable_collisions link1="link_3" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="link_4" link2="link_5" reason="User"/>
+    <disable_collisions link1="link_4" link2="link_6" reason="User"/>
+    <disable_collisions link1="link_4" link2="meca_axis_1_link" reason="User"/>
+    <disable_collisions link1="link_4" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="link_5" link2="link_6" reason="User"/>
+    <disable_collisions link1="link_5" link2="meca_axis_1_link" reason="User"/>
+    <disable_collisions link1="link_5" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="link_5" link2="tool0" reason="User"/>
+    <disable_collisions link1="link_6" link2="meca_axis_1_link" reason="User"/>
+    <disable_collisions link1="link_6" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="link_6" link2="tool0" reason="User"/>
+    <disable_collisions link1="meca_axis_1_link" link2="meca_axis_2_link" reason="User"/>
+    <disable_collisions link1="meca_axis_1_link" link2="meca_axis_3_link" reason="User"/>
+    <disable_collisions link1="meca_axis_1_link" link2="meca_axis_4_link" reason="User"/>
+    <disable_collisions link1="meca_axis_1_link" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="meca_axis_1_link" link2="tool0" reason="User"/>
+    <disable_collisions link1="meca_axis_2_link" link2="meca_axis_3_link" reason="User"/>
+    <disable_collisions link1="meca_axis_2_link" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="meca_axis_3_link" link2="meca_axis_4_link" reason="User"/>
+    <disable_collisions link1="meca_axis_3_link" link2="meca_axis_5_link" reason="User"/>
+    <disable_collisions link1="meca_axis_3_link" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="meca_axis_3_link" link2="tool_meca" reason="User"/>
+    <disable_collisions link1="meca_axis_4_link" link2="meca_axis_5_link" reason="User"/>
+    <disable_collisions link1="meca_axis_4_link" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="meca_axis_4_link" link2="tool_meca" reason="User"/>
+    <disable_collisions link1="meca_axis_5_link" link2="meca_axis_6_link" reason="User"/>
+    <disable_collisions link1="meca_axis_5_link" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="meca_axis_5_link" link2="tool_meca" reason="User"/>
+    <disable_collisions link1="meca_axis_6_link" link2="meca_base_link" reason="User"/>
+    <disable_collisions link1="meca_axis_6_link" link2="tool_meca" reason="User"/>
+    <disable_collisions link1="meca_base_link" link2="telebot_cell_base_link" reason="User"/>
+    <disable_collisions link1="meca_base_link" link2="tool0" reason="User"/>
+</robot>

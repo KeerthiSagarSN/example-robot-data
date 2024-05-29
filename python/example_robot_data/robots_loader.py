@@ -558,6 +558,13 @@ class IrisLoader(RobotLoader):
     free_flyer = True
 
 
+class KUKAMECALoader(RobotLoader):
+    path = "dual_robot_description"
+    urdf_filename = "kuka_meca.urdf"
+    urdf_subpath = "urdf"
+
+    
+
 ROBOTS = {
     "b1": B1Loader,
     "go1": Go1Loader,
@@ -610,6 +617,7 @@ ROBOTS = {
     "ur5_limited": UR5LimitedLoader,
     "ur10": UR10Loader,
     "ur10_limited": UR10LimitedLoader,
+    "kuka_meca":KUKAMECALoader,
 }
 
 
