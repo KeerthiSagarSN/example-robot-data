@@ -4,6 +4,21 @@
     A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
 -->
 <robot name="kuka_meca">
+
+    <group_state name="half_sitting" group="arm_and_hand">
+        <joint name="joint_a1" value="0.001"/>
+        <joint name="joint_a2" value="0"/>
+        <joint name="joint_a3" value="-0.785398"/>
+        <joint name="joint_a4" value="0"/>
+        <joint name="joint_a5" value="-2.35619"/>
+        <joint name="joint_a6" value="0"/>
+        <joint name="meca_axis_1_joint" value="1.5707"/>
+        <joint name="meca_axis_2_joint" value="0"/>
+        <joint name="meca_axis_3_joint" value="0"/>
+        <joint name="meca_axis_4_joint" value="0"/>
+        <joint name="meca_axis_5_joint" value="0"/>
+        <joint name="meca_axis_6_joint" value="0"/>
+    </group_state>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="link_1" reason="User"/>
     <disable_collisions link1="base_link" link2="link_2" reason="User"/>
@@ -79,3 +94,4 @@
     <disable_collisions link1="meca_base_link" link2="telebot_cell_base_link" reason="User"/>
     <disable_collisions link1="meca_base_link" link2="tool0" reason="User"/>
 </robot>
+

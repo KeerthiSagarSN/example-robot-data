@@ -562,6 +562,10 @@ class KUKAMECALoader(RobotLoader):
     path = "dual_robot_description"
     urdf_filename = "kuka_meca.urdf"
     urdf_subpath = "urdf"
+    srdf_filename = "kuka_meca.srdf"
+    srdf_subpath = "srdf"    
+    ref_posture = "half_sitting"
+    
 
     
 
