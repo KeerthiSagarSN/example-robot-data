@@ -5,14 +5,14 @@
 -->
 <robot name="kuka_meca">
 
-    <group_state name="half_sitting" group="arm_and_hand">
+    <group_state name="half_sitting" group="kuka_and_meca">
         <joint name="joint_a1" value="0.001"/>
-        <joint name="joint_a2" value="0"/>
-        <joint name="joint_a3" value="-0.785398"/>
+        <joint name="joint_a2" value="-1.54"/>
+        <joint name="joint_a3" value="1.54"/>
         <joint name="joint_a4" value="0"/>
-        <joint name="joint_a5" value="-2.35619"/>
+        <joint name="joint_a5" value="0"/>
         <joint name="joint_a6" value="0"/>
-        <joint name="meca_axis_1_joint" value="1.5707"/>
+        <joint name="meca_axis_1_joint" value="0"/>
         <joint name="meca_axis_2_joint" value="0"/>
         <joint name="meca_axis_3_joint" value="0"/>
         <joint name="meca_axis_4_joint" value="0"/>
@@ -36,7 +36,7 @@
     <disable_collisions link1="base_link" link2="telebot_cell_base_link" reason="User"/>
     <disable_collisions link1="base_link" link2="tool0" reason="User"/>
     <disable_collisions link1="base_link" link2="tool_meca" reason="User"/>
-    <disable_collisions link1="link_1" link2="link_2" reason="User"/>
+    <disable_collisions link1="link_1" link2="link_2" reason="Adjacent"/>
     <disable_collisions link1="link_1" link2="link_3" reason="User"/>
     <disable_collisions link1="link_1" link2="meca_axis_1_link" reason="User"/>
     <disable_collisions link1="link_1" link2="meca_axis_2_link" reason="User"/>
